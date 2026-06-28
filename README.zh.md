@@ -2,9 +2,10 @@
 
 **Ackem v1.0.0** — 运行在你 Windows 电脑上的 AI 伴侣应用。
 
-> **代码库位置**：本仓库根目录 `Ackem-v0.0.0/`（推送到 [JasonLiu0826/Ackem](https://github.com/JasonLiu0826/Ackem)）  
-> **Windows 绿色版**：`dist/release/Ackem-1.0.0-win-x64/`  
-> 路径说明见 [docs/CODEBASE-PATHS.md](./docs/CODEBASE-PATHS.md)
+> **源码仓库**：[github.com/JasonLiu0826/Ackem](https://github.com/JasonLiu0826/Ackem)  
+> **Windows 发行版**：从 [Releases](https://github.com/JasonLiu0826/Ackem/releases) 下载  
+> **本地构建**：`npm run dist:green` → `dist/release/Ackem-1.0.0-win-x64/`  
+> 路径说明：[docs/CODEBASE-PATHS.md](./docs/CODEBASE-PATHS.md)
 
 English README: [README.md](./README.md) · English user docs: [docs/privacy-and-data.md](./docs/privacy-and-data.md)
 

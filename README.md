@@ -2,9 +2,10 @@
 
 **Ackem v1.0.0** — A local-first AI companion for Windows.
 
-> **Source code**: Repository root `Ackem-v0.0.0/` (pushed to [JasonLiu0826/Ackem](https://github.com/JasonLiu0826/Ackem))  
-> **Windows build**: `dist/release/Ackem-1.0.0-win-x64/`  
-> Path reference: [docs/CODEBASE-PATHS.md](./docs/CODEBASE-PATHS.md)
+> **Source code**: [github.com/JasonLiu0826/Ackem](https://github.com/JasonLiu0826/Ackem)  
+> **Windows release**: Download from [Releases](https://github.com/JasonLiu0826/Ackem/releases)  
+> **Build locally**: `npm run dist:green` → `dist/release/Ackem-1.0.0-win-x64/`  
+> Path details: [docs/CODEBASE-PATHS.md](./docs/CODEBASE-PATHS.md)
 
 [中文文档](./README.zh.md) · [中文用户文档](./docs/privacy-and-data.zh.md)
 
