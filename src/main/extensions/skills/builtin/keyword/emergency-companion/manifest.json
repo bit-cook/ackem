@@ -1,0 +1,26 @@
+{
+  "id": "ackem/emergency-companion@0.0.1",
+  "name": "应急陪伴模式",
+  "version": "0.0.1",
+  "category": "skill",
+  "skillType": "rule",
+  "description": "[S-07] 难过/焦虑等关键词；关闭负向感知；非心理治疗",
+  "author": "JasonLiu0826",
+  "license": "AGPL-3.0",
+  "main": "stub.ts",
+  "engineVersion": ">=0.1.0 <1.0.0",
+  "triggers": [
+    "keyword",
+    "manual"
+  ],
+  "permissions": [
+    "engine_read"
+  ],
+  "timeoutMs": 30000,
+  "adultModeSafe": true,
+  "tags": [
+    "builtin",
+    "placeholder",
+    "s-07"
+  ]
+}

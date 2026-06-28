@@ -1,0 +1,25 @@
+{
+  "id": "ackem/drink-water-reminder@0.0.1",
+  "name": "喝水提醒",
+  "version": "0.0.1",
+  "category": "skill",
+  "skillType": "proactive",
+  "description": "[S-06] 定时喝水轻提醒",
+  "author": "JasonLiu0826",
+  "license": "AGPL-3.0",
+  "main": "stub.ts",
+  "engineVersion": ">=0.1.0 <1.0.0",
+  "triggers": [
+    "scheduled"
+  ],
+  "permissions": [
+    "engine_read"
+  ],
+  "timeoutMs": 30000,
+  "adultModeSafe": true,
+  "tags": [
+    "builtin",
+    "placeholder",
+    "s-06"
+  ]
+}

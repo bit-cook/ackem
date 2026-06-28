@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "city": "Shanghai",
+  "locationName": "上海",
+  "country": "中国",
+  "latitude": 31.2222,
+  "longitude": 121.4581,
+  "fetchedAt": "2026-05-22T08:00:00.000Z",
+  "stale": false,
+  "source": "fixture",
+  "current": {
+    "temperatureC": 22,
+    "humidityPct": 68,
+    "weatherCode": 3,
+    "condition": "多云",
+    "windSpeedKmh": 12
+  }
+}

@@ -1,0 +1,5 @@
+# Bundled GPT-SoVITS runtime (junction or release copy). Do not commit — use prepare_bundled_gpt_sovits_runtime.py before installer build.
+/gpt-sovits-runtime/
+
+# Large trained weights — included in release artifact, optional in git (run package script)
+/models/gpt-sovits/*/weights/

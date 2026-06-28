@@ -1,0 +1,25 @@
+{
+  "id": "ackem/ambient-recall@0.0.1",
+  "name": "回忆触发",
+  "version": "0.0.1",
+  "category": "skill",
+  "skillType": "proactive",
+  "description": "[S-20] 低概率主动回忆；频控+默认关；仅已授权池",
+  "author": "JasonLiu0826",
+  "license": "AGPL-3.0",
+  "main": "stub.ts",
+  "engineVersion": ">=0.1.0 <1.0.0",
+  "triggers": [
+    "scheduled"
+  ],
+  "permissions": [
+    "engine_read"
+  ],
+  "timeoutMs": 30000,
+  "adultModeSafe": true,
+  "tags": [
+    "builtin",
+    "placeholder",
+    "s-20"
+  ]
+}

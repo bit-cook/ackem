@@ -1,0 +1,25 @@
+{
+  "id": "ackem/procedural-memory@0.0.1",
+  "name": "技能反思/程序性记忆",
+  "version": "0.0.1",
+  "category": "skill",
+  "skillType": "proactive",
+  "description": "[S-17] LLM 学会如何做某事并记忆为程序性知识",
+  "author": "JasonLiu0826",
+  "license": "AGPL-3.0",
+  "main": "stub.ts",
+  "engineVersion": ">=0.1.0 <1.0.0",
+  "triggers": [
+    "engine_event"
+  ],
+  "permissions": [
+    "engine_read"
+  ],
+  "timeoutMs": 30000,
+  "adultModeSafe": true,
+  "tags": [
+    "builtin",
+    "placeholder",
+    "s-17"
+  ]
+}

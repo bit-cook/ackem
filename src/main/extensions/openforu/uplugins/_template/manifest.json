@@ -1,0 +1,31 @@
+{
+  "id": "u/my-plugin@1.0.0",
+  "name": "我的 Plugin",
+  "version": "1.0.0",
+  "category": "plugin",
+  "pluginType": "tool",
+  "description": "在这里写一句话描述你的 Plugin 做什么",
+  "author": "Ackem User",
+  "license": "AGPL-3.0",
+  "main": "main.ts",
+  "engineVersion": ">=0.1.0 <2.0.0",
+  "permissions": ["readonly", "engine_read"],
+  "fallbackPermissions": ["readonly"],
+  "dependencies": [],
+  "tags": ["openforu", "user-created"],
+  "compatiblePersonalities": [],
+  "homepage": "",
+  "dispatch": {
+    "mode": "dispatched",
+    "subtype": "keyword_hint",
+    "habits": ["用户请求与此 Plugin 相关的能力"],
+    "scenarios": ["需要 Plugin 提供的辅助功能时"],
+    "summary": "在这里写一句话描述你的 Plugin 做什么",
+    "keywords": ["我的插件", "触发词"],
+    "time": {
+      "active_hours": "08:00-22:00",
+      "cooldown_minutes": 10
+    },
+    "personality_hint": "neutral"
+  }
+}

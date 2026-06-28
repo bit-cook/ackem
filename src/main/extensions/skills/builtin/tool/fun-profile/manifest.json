@@ -1,0 +1,28 @@
+{
+  "id": "ackem/fun-profile@0.0.1",
+  "name": "趣味档案生成",
+  "version": "0.0.1",
+  "category": "skill",
+  "skillType": "tool",
+  "description": "[S-09] 基于已授权记忆生成宠溺/吐槽风小传",
+  "author": "JasonLiu0826",
+  "license": "AGPL-3.0",
+  "main": "stub.ts",
+  "engineVersion": ">=0.1.0 <1.0.0",
+  "triggers": [
+    "manual",
+    "llm_function_call"
+  ],
+  "permissions": [
+    "engine_read",
+    "network_outbound",
+    "data_write"
+  ],
+  "timeoutMs": 30000,
+  "adultModeSafe": true,
+  "tags": [
+    "builtin",
+    "placeholder",
+    "s-09"
+  ]
+}

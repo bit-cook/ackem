@@ -1,0 +1,24 @@
+{
+  "id": "ackem/browser-history@0.0.1",
+  "name": "浏览器历史调侃",
+  "version": "0.0.1",
+  "category": "plugin",
+  "pluginType": "behavior",
+  "description": "[P-09] 强权限；分浏览器渐进；脱敏/虚构昵称模式",
+  "author": "JasonLiu0826",
+  "license": "AGPL-3.0",
+  "main": "stub.ts",
+  "engineVersion": ">=0.1.0 <1.0.0",
+  "permissions": [
+    "engine_read",
+    "system_notification"
+  ],
+  "fallbackPermissions": [
+    "readonly"
+  ],
+  "tags": [
+    "builtin",
+    "placeholder",
+    "p-09"
+  ]
+}

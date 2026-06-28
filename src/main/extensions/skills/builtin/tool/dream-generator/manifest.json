@@ -1,0 +1,26 @@
+{
+  "id": "ackem/dream-generator@0.0.1",
+  "name": "梦境生成器",
+  "version": "0.0.1",
+  "category": "skill",
+  "skillType": "tool",
+  "description": "[S-11] 昨日摘要+记忆碎片→短故事；可仅首次或永久关",
+  "author": "JasonLiu0826",
+  "license": "AGPL-3.0",
+  "main": "stub.ts",
+  "engineVersion": ">=0.1.0 <1.0.0",
+  "triggers": [
+    "manual",
+    "scheduled"
+  ],
+  "permissions": [
+    "engine_read"
+  ],
+  "timeoutMs": 30000,
+  "adultModeSafe": true,
+  "tags": [
+    "builtin",
+    "placeholder",
+    "s-11"
+  ]
+}

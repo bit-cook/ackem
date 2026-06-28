@@ -1,0 +1,24 @@
+{
+  "id": "ackem/foreground-detect@0.0.1",
+  "name": "前台窗口标题感知",
+  "version": "0.0.1",
+  "category": "plugin",
+  "pluginType": "behavior",
+  "description": "[P-07] 强权限；独立协议+子开关；仅本地不上传",
+  "author": "JasonLiu0826",
+  "license": "AGPL-3.0",
+  "main": "stub.ts",
+  "engineVersion": ">=0.1.0 <1.0.0",
+  "permissions": [
+    "engine_read",
+    "system_notification"
+  ],
+  "fallbackPermissions": [
+    "readonly"
+  ],
+  "tags": [
+    "builtin",
+    "placeholder",
+    "p-07"
+  ]
+}

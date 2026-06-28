@@ -1,0 +1,15 @@
+{
+  "id": "ackem/knowledge-presentation@1.0.0",
+  "name": "知识整理",
+  "version": "1.0.0",
+  "category": "plugin",
+  "pluginType": "tool",
+  "description": "大模型知识整理纸面卡 + 伴侣短评（不联网、无参考链接）；支持用户显式开关与多轮粘性",
+  "author": "JasonLiu0826",
+  "license": "AGPL-3.0",
+  "main": "plugin.ts",
+  "engineVersion": ">=0.1.0 <1.0.0",
+  "permissions": ["engine_read"],
+  "fallbackPermissions": ["readonly"],
+  "tags": ["knowledge", "builtin", "llm"]
+}
