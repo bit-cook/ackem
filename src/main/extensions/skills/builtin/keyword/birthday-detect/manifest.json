@@ -1,0 +1,25 @@
+{
+  "id": "ackem/birthday-detect@0.0.1",
+  "name": "用户生日检测",
+  "version": "0.0.1",
+  "category": "skill",
+  "skillType": "rule",
+  "description": "[S-13] 解析生日；手动设置 > 文档解析 > 留空",
+  "author": "JasonLiu0826",
+  "license": "AGPL-3.0",
+  "main": "stub.ts",
+  "engineVersion": ">=0.1.0 <1.0.0",
+  "triggers": [
+    "keyword"
+  ],
+  "permissions": [
+    "engine_read"
+  ],
+  "timeoutMs": 30000,
+  "adultModeSafe": true,
+  "tags": [
+    "builtin",
+    "placeholder",
+    "s-13"
+  ]
+}

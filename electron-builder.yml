@@ -1,0 +1,85 @@
+# Ackem Windows 发行配置（W3）
+# 隐私：绝不打包 data/ · .env · 用户 settings（见 docs/distribution-windows.md）
+
+appId: com.ackem.desktop
+productName: Ackem
+copyright: Copyright © 2026 Ackem contributors
+
+# 版本与 package.json 对齐（发行 v1.0.0）
+extraMetadata:
+  version: 1.0.0
+
+directories:
+  output: dist
+  buildResources: build
+
+asar: true
+
+# 发行包体积大（含 embedding + 语音），用 store 避免 7z 高压缩占满内存
+compression: store
+
+# 仅程序与生产依赖；data/ 在 .gitignore 且不在此清单
+files:
+  - out/**/*
+  - package.json
+  - "!data/**"
+  - "!**/.env"
+  - "!**/.env.*"
+  - "!**/*.log"
+  - "!**/src/**"
+  - "!**/*.map"
+
+extraFiles:
+  - from: scripts/uninstall.bat
+    to: Uninstall Ackem.bat
+
+extraResources:
+  - from: scripts/uninstall.bat
+    to: uninstall.bat
+  # 语音服务（含内置 gpt-sovits-runtime/、models/gpt-sovits/ 角色语音包；见 voice-service/models/gpt-sovits/BUNDLED.md）
+  - from: voice-service
+    to: voice-service
+    filter:
+      - "**/*"
+      - "!**/__pycache__/**"
+      - "!**/*.pyc"
+      - "!**/*.zip"
+  # 模型 zip 必须落在 {exe}/resources/models/，与 modelManager 一致
+  - from: resources/models
+    to: models
+    filter:
+      - "**/*"
+  # 图标等静态资源（不含 models，避免重复嵌套 resources/resources/）
+  - from: resources
+    to: resources
+    filter:
+      - "**/*"
+      - "!models/**"
+  # 微信 curated 贴纸 manifest（PNG 可按 preset 后续补全）
+  - from: assets/weixin-stickers
+    to: assets/weixin-stickers
+    filter:
+      - "**/*"
+  # 开发者扩展接口协议（绿色版 docs/developer/）
+  - from: docs/developer
+    to: docs/developer
+    filter:
+      - "**/*"
+
+win:
+  icon: build/icon.ico
+  # 跳过 winCodeSign/rcedit（无管理员 symlink 权限时会打包失败）；图标由 scripts/patch-exe-icon.mjs 写入
+  signAndEditExecutable: false
+  target:
+    - target: dir
+      arch:
+        - x64
+  artifactName: ${productName}-${version}-${arch}.${ext}
+
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  shortcutName: Ackem
+  artifactName: ${productName}-${version}-Setup-${arch}.exe
+  deleteAppDataOnUninstall: false

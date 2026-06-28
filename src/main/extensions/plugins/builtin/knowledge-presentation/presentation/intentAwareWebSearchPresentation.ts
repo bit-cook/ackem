@@ -1,0 +1,82 @@
+// [intentAwareWebSearchPresentation] — 意图澄清 → 搜索 → 筛选 → 纸面卡（web_search 主链路）
+
+import type { WebContents } from 'electron'
+import type { AppSettings } from '../../../../../settings'
+import type { UserTaskFrame } from '../../../../../../shared/taskFrame'
+import { buildSearchCandidateQueries } from './searchQueryResolver'
+import { buildAckemAwareSearchQueries } from '../../../../../paperCard/ackemProductIdentity'
+import { runIntentAwareWebSearch } from './searchWithIntent'
+import { runSearchSynthesisChain } from './searchSynthesis'
+import { lastUserMessageFromContext } from '../knowledgeAnswer'
+import { publishExtensionTriggeredById } from '../../../../../extensionTriggerBus'
+import { WEB_SEARCH_MANIFEST } from '../../../../skills/builtin/tool/web-search/manifest'
+
+export type IntentAwarePresentationOutcome = {
+  companionReply: string
+  /** 纸面卡展示标题 */
+  displayQuery: string
+  /** 实际搜索引擎 query */
+  searchQuery: string
+  memoryWrite: string
+}
+
+/**
+ * 澄清 query → 联网搜索 → 筛选来源 → 检索纸面卡 + 伴侣短评。
+ */
+export async function runIntentAwareSearchPresentation(
+  webContents: WebContents,
+  settings: AppSettings,
+  contextMessages: Array<{ role: string; content: unknown }>,
+  input: {
+    candidateQueries: string[]
+    taskFrame?: UserTaskFrame
+  },
+  onStatus?: (text: string) => void
+): Promise<IntentAwarePresentationOutcome> {
+  if (input.taskFrame?.delivery !== 'markdown_table') {
+    publishExtensionTriggeredById(WEB_SEARCH_MANIFEST.id)
+  }
+  const userMsg = lastUserMessageFromContext(contextMessages)
+  const candidates = buildAckemAwareSearchQueries(
+    userMsg,
+    buildSearchCandidateQueries(userMsg, input.candidateQueries, input.taskFrame?.searchQuery)
+  )
+
+  const outcome = await runIntentAwareWebSearch(
+    settings,
+    { userMessage: userMsg, candidateQueries: candidates },
+    onStatus
+  )
+
+  const displayQuery = outcome.query || outcome.intent.displayLabel || outcome.intent.searchQuery
+  const searchQuery = outcome.intent.searchQuery || displayQuery
+
+  const companionReply = await runSearchSynthesisChain(
+    webContents,
+    settings,
+    contextMessages,
+    [
+      {
+        query: displayQuery || '网页搜索',
+        results: outcome.results,
+        error: outcome.error,
+        intentSummary: outcome.intent.intentSummary,
+        taskFrame: input.taskFrame
+      }
+    ],
+    onStatus
+  )
+
+  const memoryWrite = outcome.error
+    ? `FAIL web_search: ${outcome.error}`
+    : searchQuery
+      ? `OK web_search (${searchQuery})`
+      : 'FAIL web_search: empty query'
+
+  return {
+    companionReply,
+    displayQuery: displayQuery || searchQuery,
+    searchQuery,
+    memoryWrite
+  }
+}

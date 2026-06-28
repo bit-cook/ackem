@@ -1,0 +1,25 @@
+{
+  "id": "ackem/focus-mode-sync@0.0.1",
+  "name": "专注模式联动",
+  "version": "0.0.1",
+  "category": "skill",
+  "skillType": "proactive",
+  "description": "[S-02] Windows 专注助手；桌宠安静姿态；专注优先于空闲发脾气",
+  "author": "JasonLiu0826",
+  "license": "AGPL-3.0",
+  "main": "stub.ts",
+  "engineVersion": ">=0.1.0 <1.0.0",
+  "triggers": [
+    "system_event"
+  ],
+  "permissions": [
+    "engine_read"
+  ],
+  "timeoutMs": 30000,
+  "adultModeSafe": true,
+  "tags": [
+    "builtin",
+    "placeholder",
+    "s-02"
+  ]
+}

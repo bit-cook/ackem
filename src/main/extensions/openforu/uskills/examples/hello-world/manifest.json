@@ -1,0 +1,32 @@
+{
+  "id": "u/hello-world@1.0.0",
+  "name": "问候世界",
+  "version": "1.0.0",
+  "category": "skill",
+  "skillType": "rule",
+  "description": "示例 uskill：当用户说「你好」或「嗨」时，Ackem 会用自己的语气热情回应",
+  "author": "Ackem User",
+  "license": "AGPL-3.0",
+  "main": "skill.json",
+  "engineVersion": ">=0.1.0 <2.0.0",
+  "triggers": ["keyword"],
+  "keywords": ["你好", "嗨", "hello", "hi", "早啊", "晚上好"],
+  "permissions": ["engine_read"],
+  "timeoutMs": 5000,
+  "adultModeSafe": true,
+  "tags": ["openforu", "example", "greeting"],
+  "conflicts": [],
+  "dispatch": {
+    "mode": "dispatched",
+    "subtype": "keyword_hint",
+    "habits": ["用户打招呼", "用户说「你好」「嗨」"],
+    "scenarios": ["日常寒暄", "打开对话"],
+    "summary": "热情回应用户问候并关心今天过得如何",
+    "keywords": ["你好", "嗨", "hello", "hi", "早啊", "晚上好"],
+    "time": {
+      "active_hours": "08:00-22:00",
+      "cooldown_minutes": 5
+    },
+    "personality_hint": "neutral"
+  }
+}

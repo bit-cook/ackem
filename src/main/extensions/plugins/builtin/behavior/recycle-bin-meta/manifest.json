@@ -1,0 +1,24 @@
+{
+  "id": "ackem/recycle-bin-meta@0.0.1",
+  "name": "回收站元数据",
+  "version": "0.0.1",
+  "category": "plugin",
+  "pluginType": "behavior",
+  "description": "[P-08] 强权限；只读列举元数据，不读文件内容",
+  "author": "JasonLiu0826",
+  "license": "AGPL-3.0",
+  "main": "stub.ts",
+  "engineVersion": ">=0.1.0 <1.0.0",
+  "permissions": [
+    "engine_read",
+    "system_notification"
+  ],
+  "fallbackPermissions": [
+    "readonly"
+  ],
+  "tags": [
+    "builtin",
+    "placeholder",
+    "p-08"
+  ]
+}

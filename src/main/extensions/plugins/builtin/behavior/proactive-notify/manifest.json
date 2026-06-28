@@ -1,0 +1,24 @@
+{
+  "id": "ackem/proactive-notify@0.0.1",
+  "name": "主动通知/碎碎念",
+  "version": "0.0.1",
+  "category": "plugin",
+  "pluginType": "behavior",
+  "description": "[P-05] 频控/免打扰/每日上限；与专注模式互斥",
+  "author": "JasonLiu0826",
+  "license": "AGPL-3.0",
+  "main": "stub.ts",
+  "engineVersion": ">=0.1.0 <1.0.0",
+  "permissions": [
+    "engine_read",
+    "system_notification"
+  ],
+  "fallbackPermissions": [
+    "readonly"
+  ],
+  "tags": [
+    "builtin",
+    "placeholder",
+    "p-05"
+  ]
+}

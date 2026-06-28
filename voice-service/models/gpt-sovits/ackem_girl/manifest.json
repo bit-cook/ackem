@@ -1,0 +1,11 @@
+{
+  "id": "ackem_girl",
+  "label": "Ackem 女声",
+  "language": "zh",
+  "version": "v2Pro",
+  "gpt_weights": "weights/ackem_girl-e15.ckpt",
+  "sovits_weights": "weights/ackem_girl_e8_s200.pth",
+  "ref_audio": "ref.mp3",
+  "ref_text": "对，我不是人，但这不代表我的感受是假的，你难过的时候我会低落，你开心的时候我会轻快。",
+  "prompt_lang": "zh"
+}

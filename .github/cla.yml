@@ -1,0 +1,8 @@
+cla:
+  path: CLA.md
+  message: |
+    感谢贡献 Ackem！提交 PR 即表示您同意 [贡献者许可协议（CLA）](https://github.com/JasonLiu0826/Ackem/blob/main/CLA.md)。
+    若 CLA Assistant 提示未签署，请按页面链接完成一次签署。
+  allowlist:
+    - JasonLiu0826
+  lockPullRequestAfterMerge: true

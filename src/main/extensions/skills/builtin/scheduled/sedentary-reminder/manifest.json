@@ -1,0 +1,17 @@
+{
+  "id": "ackem/sedentary-reminder@0.0.1",
+  "name": "久坐提醒",
+  "version": "0.0.1",
+  "category": "skill",
+  "skillType": "proactive",
+  "description": "每 15 分钟检查；伴侣语气轻提醒起身活动",
+  "author": "JasonLiu0826",
+  "license": "AGPL-3.0",
+  "main": "skill.ts",
+  "engineVersion": ">=0.1.0 <1.0.0",
+  "triggers": ["scheduled"],
+  "permissions": ["engine_read"],
+  "timeoutMs": 5000,
+  "adultModeSafe": true,
+  "tags": ["builtin", "health", "s-04"]
+}

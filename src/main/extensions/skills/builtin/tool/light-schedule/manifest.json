@@ -1,0 +1,28 @@
+{
+  "id": "ackem/light-schedule@0.0.1",
+  "name": "轻量日程",
+  "version": "0.0.1",
+  "category": "skill",
+  "skillType": "tool",
+  "description": "[S-12] 极简 md 段落；禁止演化成通用日历",
+  "author": "JasonLiu0826",
+  "license": "AGPL-3.0",
+  "main": "stub.ts",
+  "engineVersion": ">=0.1.0 <1.0.0",
+  "triggers": [
+    "keyword",
+    "llm_function_call"
+  ],
+  "permissions": [
+    "engine_read",
+    "network_outbound",
+    "data_write"
+  ],
+  "timeoutMs": 30000,
+  "adultModeSafe": true,
+  "tags": [
+    "builtin",
+    "placeholder",
+    "s-12"
+  ]
+}

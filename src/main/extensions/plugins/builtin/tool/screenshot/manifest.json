@@ -1,0 +1,24 @@
+{
+  "id": "ackem/screenshot@0.0.1",
+  "name": "截图/快照",
+  "version": "0.0.1",
+  "category": "plugin",
+  "pluginType": "tool",
+  "description": "[P-13] 截图保存按钮",
+  "author": "JasonLiu0826",
+  "license": "AGPL-3.0",
+  "main": "stub.ts",
+  "engineVersion": ">=0.1.0 <1.0.0",
+  "permissions": [
+    "readonly"
+  ],
+  "fallbackPermissions": [
+    "readonly"
+  ],
+  "tags": [
+    "builtin",
+    "placeholder",
+    "p-13",
+    "deprecated"
+  ]
+}

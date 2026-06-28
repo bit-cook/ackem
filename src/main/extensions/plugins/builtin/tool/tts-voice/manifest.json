@@ -1,0 +1,28 @@
+{
+  "id": "ackem/tts-voice@0.0.1",
+  "name": "TTS 语音朗读",
+  "version": "0.0.1",
+  "category": "plugin",
+  "pluginType": "tool",
+  "implementationStatus": "stub",
+  "description": "【Stub · W8 待实装】当前仅通过系统通知预览 AI 回复文本，不会播放真语音；真 TTS（SAPI/Edge）留 W8。",
+  "author": "JasonLiu0826",
+  "license": "AGPL-3.0",
+  "main": "bootstrap.ts",
+  "engineVersion": ">=0.1.0 <1.0.0",
+  "permissions": [
+    "readonly",
+    "system_notification"
+  ],
+  "fallbackPermissions": [
+    "readonly",
+    "system_notification"
+  ],
+  "tags": [
+    "builtin",
+    "p-11",
+    "w5",
+    "stub",
+    "w8-planned"
+  ]
+}

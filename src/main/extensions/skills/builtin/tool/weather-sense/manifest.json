@@ -1,0 +1,28 @@
+{
+  "id": "ackem/weather-sense@0.0.1",
+  "name": "天气感知",
+  "version": "0.0.1",
+  "category": "skill",
+  "skillType": "tool",
+  "description": "[S-01] Open-Meteo；城市手输；失败降级",
+  "author": "JasonLiu0826",
+  "license": "AGPL-3.0",
+  "main": "stub.ts",
+  "engineVersion": ">=0.1.0 <1.0.0",
+  "triggers": [
+    "llm_function_call",
+    "scheduled"
+  ],
+  "permissions": [
+    "engine_read",
+    "network_outbound",
+    "data_write"
+  ],
+  "timeoutMs": 30000,
+  "adultModeSafe": true,
+  "tags": [
+    "builtin",
+    "placeholder",
+    "s-01"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "description": "微信通道 curated 贴纸资源（PNG）。CDN 上传未启用前仅登记 id，不发图。",
+  "stickers": [
+    { "id": "tsundere_pout", "presetId": "tsundere", "file": "tsundere/pout.png", "tags": ["pout", "annoyed"] },
+    { "id": "genki_hype", "presetId": "genki", "file": "genki/hype.png", "tags": ["hype", "game"] },
+    { "id": "mesugaki_smug", "presetId": "mesugaki", "file": "mesugaki/smug.png", "tags": ["smug", "tease"] }
+  ]
+}

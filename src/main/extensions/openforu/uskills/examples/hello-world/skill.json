@@ -1,0 +1,20 @@
+{
+  "version": "1.0.0",
+  "onKeyword": {
+    "reply": "{{greeting}}！今天心情怎么样？有什么想聊的或者需要帮忙的吗？",
+    "variables": {
+      "greeting": ["嗨", "你好呀", "嘿", "早啊"]
+    }
+  },
+  "onFunctionCall": {
+    "handler": null
+  },
+  "onProactive": {
+    "enabled": false
+  },
+  "promptTemplates": {
+    "contextInjection": "【问候 Skill 触发】用户刚刚打了招呼。用你自然的语气热情回应，并顺带问一句对方今天过得如何。"
+  },
+  "variables": {},
+  "allowedApiDomains": []
+}

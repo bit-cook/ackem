@@ -1,0 +1,31 @@
+{
+  "id": "ackem/web-search@1.0.0",
+  "name": "网页搜索",
+  "version": "1.0.0",
+  "category": "skill",
+  "skillType": "tool",
+  "description": "通过 Bing 搜索网页，获取实时信息",
+  "author": "JasonLiu0826",
+  "license": "AGPL-3.0",
+  "main": "skill.ts",
+  "engineVersion": ">=0.1.0 <1.0.0",
+  "triggers": ["llm_function_call"],
+  "permissions": ["engine_read", "network_outbound"],
+  "timeoutMs": 30000,
+  "adultModeSafe": true,
+  "functionDef": {
+    "name": "web_search",
+    "description": "通过 Bing 搜索网页获取实时信息",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "搜索关键词"
+        }
+      },
+      "required": ["query"]
+    }
+  },
+  "tags": ["builtin", "search", "bing", "s-15"]
+}

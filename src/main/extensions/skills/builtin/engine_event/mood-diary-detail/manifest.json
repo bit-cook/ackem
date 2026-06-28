@@ -1,0 +1,25 @@
+{
+  "id": "ackem/mood-diary-detail@0.0.1",
+  "name": "心情日记详规",
+  "version": "0.0.1",
+  "category": "skill",
+  "skillType": "proactive",
+  "description": "[S-03] 情绪突变→事件队列+轨迹快照→diary/YYYY-MM-DD.md",
+  "author": "JasonLiu0826",
+  "license": "AGPL-3.0",
+  "main": "stub.ts",
+  "engineVersion": ">=0.1.0 <1.0.0",
+  "triggers": [
+    "engine_event"
+  ],
+  "permissions": [
+    "engine_read"
+  ],
+  "timeoutMs": 30000,
+  "adultModeSafe": true,
+  "tags": [
+    "builtin",
+    "placeholder",
+    "s-03"
+  ]
+}

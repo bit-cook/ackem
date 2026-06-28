@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "onKeyword": {
+    "reply": "在这里描述触发后希望 Ackem 做什么",
+    "variables": {}
+  },
+  "onFunctionCall": {
+    "handler": null
+  },
+  "onProactive": {
+    "enabled": false
+  },
+  "promptTemplates": {
+    "contextInjection": "【我的 Skill 已触发】在这里写要注入给 LLM 的完整指示。Ackem 会用伴侣语气回应并落实上述行为。",
+    "userFacing": "我的 Skill 已触发 ✓"
+  },
+  "variables": {},
+  "allowedApiDomains": []
+}

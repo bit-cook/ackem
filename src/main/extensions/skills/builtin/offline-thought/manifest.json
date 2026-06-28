@@ -1,0 +1,15 @@
+{
+  "id": "ackem/offline-thought@0.1.0",
+  "name": "离线思绪",
+  "version": "0.1.0",
+  "category": "skill",
+  "skillType": "proactive",
+  "description": "应用退出时生成未送达的离线思绪",
+  "author": "JasonLiu0826",
+  "license": "AGPL-3.0",
+  "main": "skill.ts",
+  "engineVersion": ">=0.1.0 <1.0.0",
+  "triggers": ["engine_event"],
+  "permissions": ["engine_read"],
+  "tags": ["offline", "builtin"]
+}

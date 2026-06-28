@@ -1,0 +1,27 @@
+{
+  "id": "ackem/file-ops@0.0.1",
+  "name": "文件操作",
+  "version": "0.0.1",
+  "category": "skill",
+  "skillType": "tool",
+  "description": "[S-16] read_file/write_file；staging 白名单",
+  "author": "JasonLiu0826",
+  "license": "AGPL-3.0",
+  "main": "stub.ts",
+  "engineVersion": ">=0.1.0 <1.0.0",
+  "triggers": [
+    "llm_function_call"
+  ],
+  "permissions": [
+    "engine_read",
+    "network_outbound",
+    "data_write"
+  ],
+  "timeoutMs": 30000,
+  "adultModeSafe": true,
+  "tags": [
+    "builtin",
+    "placeholder",
+    "s-16"
+  ]
+}

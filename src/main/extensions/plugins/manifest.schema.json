@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "ackem:plugins:manifest",
+  "title": "Ackem Plugin Manifest",
+  "description": "插件的清单文件规范",
+  "type": "object",
+  "required": ["id", "name", "version", "category", "pluginType", "permissions", "description", "author", "license", "main", "engineVersion"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_-]+/[a-z0-9_-]+@\\d+\\.\\d+\\.\\d+$",
+      "description": "唯一标识，格式：scope/name@version"
+    },
+    "name": { "type": "string", "minLength": 1, "maxLength": 64 },
+    "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+    "category": { "type": "string", "const": "plugin" },
+    "pluginType": {
+      "type": "string",
+      "enum": ["skin", "personality", "behavior", "tool", "game_provider", "skill_pack", "theme"],
+      "description": "插件类型"
+    },
+    "permissions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["readonly", "data_write", "engine_read", "engine_inject", "network_outbound", "system_notification", "clipboard_read", "foreground_detect"]
+      },
+      "description": "请求的权限列表"
+    },
+    "fallbackPermissions": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "降级模式的最小权限"
+    },
+    "description": { "type": "string", "maxLength": 256 },
+    "author": { "type": "string" },
+    "license": { "type": "string", "default": "AGPL-3.0" },
+    "main": { "type": "string" },
+    "engineVersion": { "type": "string" },
+    "dependencies": { "type": "array", "items": { "type": "string" } },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "homepage": { "type": "string", "format": "uri" },
+    "icon": { "type": "string" },
+    "screenshots": { "type": "array", "items": { "type": "string" } },
+    "compatiblePersonalities": { "type": "array", "items": { "type": "string" } },
+    "companionSkin": {
+      "type": "object",
+      "description": "覆盖主界面伴侣交互形象（仅建议 skin 类型插件使用）",
+      "required": ["renderer", "entry"],
+      "properties": {
+        "renderer": { "type": "string", "enum": ["html", "react-builtin"] },
+        "entry": { "type": "string" },
+        "statusLabels": {
+          "type": "object",
+          "properties": {
+            "idle": { "type": "string" },
+            "listening": { "type": "string" },
+            "thinking": { "type": "string" },
+            "speaking": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}

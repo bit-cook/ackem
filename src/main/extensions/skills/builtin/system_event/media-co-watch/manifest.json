@@ -1,0 +1,29 @@
+{
+  "id": "ackem/media-co-watch@0.0.1",
+  "name": "共同观影/听歌",
+  "version": "0.0.1",
+  "category": "skill",
+  "skillType": "tool",
+  "implementationStatus": "preview",
+  "description": "【Preview · W8 加深】关键词触发共娱句；Windows 上会按需读取 SMTC 曲名/标题并写入回复，无会话时用通用陪伴句。",
+  "author": "JasonLiu0826",
+  "license": "AGPL-3.0",
+  "main": "skill.ts",
+  "engineVersion": ">=0.1.0 <1.0.0",
+  "triggers": [
+    "keyword"
+  ],
+  "permissions": [
+    "engine_read"
+  ],
+  "timeoutMs": 5000,
+  "adultModeSafe": true,
+  "tags": [
+    "builtin",
+    "s-08",
+    "w5",
+    "preview",
+    "smtc",
+    "w8-planned"
+  ]
+}
