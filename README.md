@@ -2,12 +2,59 @@
 
 **Ackem v1.0.0** — A local-first AI companion for Windows.
 
-> **Source code**: [github.com/JasonLiu0826/Ackem](https://github.com/JasonLiu0826/Ackem)  
-> **Windows release**: Download from [Releases](https://github.com/JasonLiu0826/Ackem/releases)  
+> **Source code**: [GitHub](https://github.com/JasonLiu0826/Ackem) · [Gitee mirror](https://gitee.com/jason_2005/ackem)  
+> **Windows release**: [GitHub Releases](https://github.com/JasonLiu0826/Ackem/releases) · [Gitee Releases](https://gitee.com/jason_2005/ackem/releases)  
 > **Build locally**: `npm run dist:green` → `dist/release/Ackem-1.0.0-win-x64/`  
 > Path details: [docs/CODEBASE-PATHS.md](./docs/CODEBASE-PATHS.md)
 
 [中文文档](./README.zh.md) · [中文用户文档](./docs/privacy-and-data.zh.md)
+
+---
+
+## Screenshots
+
+<p align="center">
+  <img src="./docs/images/01-loading.png" alt="Ackem loading screen" width="720" />
+  <br /><em>Loading screen — on first launch the local embedding model auto-extracts; the main UI appears when the progress bar completes</em>
+</p>
+
+<p align="center">
+  <img src="./docs/images/02-home.png" alt="Ackem home page" width="720" />
+  <br /><em>Home — chat, memory, games, extensions, and settings; relationship status and desktop pet preview on the right</em>
+</p>
+
+<p align="center">
+  <img src="./docs/images/03-settings.png" alt="Ackem settings" width="720" />
+  <br /><em>Settings — personality, voice, desktop pet, WeChat bridge, extensions, and data management</em>
+</p>
+
+<p align="center">
+  <img src="./docs/images/04-model-api.png" alt="Ackem model and API configuration" width="720" />
+  <br /><em>Model setup — Base URL, API Key, and Model ID; works with any OpenAI-compatible cloud API or local Ollama / LM Studio</em>
+</p>
+
+<p align="center">
+  <img src="./docs/images/05-compliance.png" alt="Ackem privacy and compliance consent" width="720" />
+  <br /><em>Compliance — confirm privacy policy, data handling, and adult-mode terms before first use</em>
+</p>
+
+---
+
+## Demo
+
+### Download & open
+
+<p align="center">
+  <img src="./docs/images/01-download-open.gif" alt="Ackem download extract and first launch demo" width="720" />
+  <br /><em>Download the green release zip → extract → launch Ackem.exe → wait for loading → enter the main UI</em>
+</p>
+
+### Daily chat
+
+<p align="center">
+  <img src="./docs/images/02-daily-chat.gif" alt="Ackem daily conversation demo" width="720" />
+  <br /><em>After configuring your model, chat naturally; Ackem replies using memory and relationship state</em>
+</p>
 
 ---
 
@@ -40,7 +87,7 @@ No Node.js or coding skills required.
 
 ### For developers
 
-See the **「Developers」** section below, the [architecture docs](#six-system-architecture) and the [document index](#documentation).
+See the **「Developers」** section below, the [architecture docs](#seven-system-architecture) and the [document index](#documentation).
 
 ---
 
@@ -60,11 +107,12 @@ See [docs/distribution-windows.md](./docs/distribution-windows.md) for details.
 
 ### Steps
 
-1. **Download** — Get `Ackem-v1.0.0-win-x64.zip` from [GitHub Releases](https://github.com/JasonLiu0826/Ackem/releases)
+1. **Download** — Get `Ackem-v1.0.0-win-x64.zip` from [GitHub Releases](https://github.com/JasonLiu0826/Ackem/releases) or [Gitee Releases](https://gitee.com/jason_2005/ackem/releases)
 2. **Extract** — Unzip fully to an SSD directory (do not run from inside the zip)
-3. **Launch** — Double-click `Ackem.exe` or `启动 Ackem.bat`. First launch takes ~10–30 seconds
-4. **Configure model** — Enter Base URL, API Key (required for cloud), and Model ID in **Settings**
-5. **First chat** — Send a message to confirm the reply. Optionally import `.txt`/`.md` memories
+3. **Launch** — Double-click `Ackem.exe` or `启动 Ackem.bat`. First launch takes ~10–30 seconds (see [loading screen](#screenshots) above)
+4. **Compliance** — Accept privacy and data-handling terms (see [compliance screenshot](#screenshots))
+5. **Configure model** — Enter Base URL, API Key (required for cloud), and Model ID under **Settings → Model & API**
+6. **First chat** — Send a message to confirm the reply. Optionally import `.txt`/`.md` memories
 
 ---
 
