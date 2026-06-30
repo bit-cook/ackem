@@ -51,6 +51,11 @@ Ackem is **not** a web chat box — it is a Windows desktop app that stays with 
 </p>
 
 <p align="center">
+  <img src="./docs/images/03-memory-graph.jpg" alt="Memory visualization" width="640" />
+  <br /><em>Memory — structured recall, timelines, and knowledge connections from your conversations</em>
+</p>
+
+<p align="center">
   <img src="./docs/images/03-settings.png" alt="Settings" width="640" />
   <br /><em>Settings — personality, voice, desktop pet, WeChat bridge, extensions, data</em>
 </p>
