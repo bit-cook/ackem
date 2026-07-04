@@ -142,7 +142,7 @@ Details: [docs/distribution-windows.md](./docs/distribution-windows.md)
 
 > **Sharing the zip:** never re-pack your personal `data/` folder — it contains chats, memory, and keys.
 
-### macOS (community build, unofficial)
+### macOS (community build, unofficial) {#macos-community-build-unofficial}
 
 > **Official support:** Windows green release only. The Mac builds below are **community-contributed** by [@deufe](https://github.com/deufe) — not maintained or fully verified by the core team. See [Issue #4](https://github.com/JasonLiu0826/ackem/issues/4).
 
