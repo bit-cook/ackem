@@ -142,6 +142,19 @@ Details: [docs/distribution-windows.md](./docs/distribution-windows.md)
 
 > **Sharing the zip:** never re-pack your personal `data/` folder — it contains chats, memory, and keys.
 
+### macOS (community build, unofficial)
+
+> **Official support:** Windows green release only. The Mac builds below are **community-contributed** by [@deufe](https://github.com/deufe) — not maintained or fully verified by the core team. See [Issue #4](https://github.com/JasonLiu0826/ackem/issues/4).
+
+| File | Architecture | Download |
+|------|----------------|----------|
+| `Ackem-1.0.0-mac-arm64.dmg` | Apple Silicon (M series) | [v3 DMG](https://github.com/deufe/ackem/releases/download/v1.0.0-mac-community-v3/Ackem-1.0.0-mac-arm64.dmg) |
+| `Ackem-1.0.0-mac-x64.dmg` | Intel Mac | [v3 DMG](https://github.com/deufe/ackem/releases/download/v1.0.0-mac-community-v3/Ackem-1.0.0-mac-x64.dmg) |
+
+**Use v3 only** (v1/v2 are outdated). SHA256 and install steps: [v1.0.0 Release notes](https://github.com/JasonLiu0826/ackem/releases/tag/v1.0.0) · [appendix doc](./docs/releases/v1.0.0-mac-community-appendix.md)
+
+**First launch (Gatekeeper):** the build is not Apple-signed. After copying to `/Applications`, run `xattr -cr /Applications/Ackem.app`, then **right-click → Open** once. In-app auto-update is **Windows-only**.
+
 ---
 
 ## Developers
@@ -246,6 +259,8 @@ For commercial use, contact: **jasonliu_lyf_2005@qq.com**
 ### Contributor Agreement
 
 By submitting a contribution to this project, you agree to the [Contributor License Agreement (CLA)](./CLA.md).
+
+Recognized contributors: [CONTRIBUTORS.md](./CONTRIBUTORS.md)
 
 Copyright (C) 2026 Jason Liu (JasonLiu0826)
 
